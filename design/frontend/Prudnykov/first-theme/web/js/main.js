@@ -1,38 +1,10 @@
 require(['jquery', 'slick'], function($){
 	$(function(){
 		$('.slider-product-items').slick({
-		  infinite: true,
 		  slidesToShow: 4,
 		  slidesToScroll: 1,
-		  adaptiveHeight: true,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: false
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]
+		  prevArrow: '<button class="product-slider-wrapper-btn product-slider-wrapper-btnprev"><img class="product-slider-wrapper-btnprev-img" src="" alt="arrow" /></button>',
+		  nextArrow: '<button class="product-slider-wrapper-btn product-slider-wrapper-btnnext"><img class="product-slider-wrapper-btnnext-img" src="" alt="arrow" /></button>'
 		});
 	});
 });
