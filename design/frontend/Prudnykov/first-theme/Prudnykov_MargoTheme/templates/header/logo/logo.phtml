@@ -2,7 +2,7 @@
 /** @var \Magento\Framework\View\Element\Template $block */
 ?>
 
-<a class="header-logo-margo__link" href="http://localhost:82/magento2/">
+<a class="header-logo-margo__link" href='<?php echo $block->getBaseUrl(); ?>'>
 	<img class="bannerItem2__image" src='<?php echo $this->getViewFileUrl('images/header/margo.png'); ?>' width="195" height="39" alt="image" />
 </a>
 <p>Fashional Magento Theme</p>
